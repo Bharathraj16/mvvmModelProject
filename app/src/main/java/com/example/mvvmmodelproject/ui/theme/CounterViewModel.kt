@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 class CounterViewModel : ViewModel() {
     // Initialize count with a mutable state of 0
     private val _count = mutableStateOf(0)
+    //Access _count variable globally,so MutableState use
     val count: MutableState<Int> = _count
 
     fun increment() {
